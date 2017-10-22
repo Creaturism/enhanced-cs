@@ -1,48 +1,91 @@
 #container {
     margin: 0 auto;
     width: 60%;
-    background: #fadef9;
+    background: #Fff;
     height: 100%;
+    /* overflow: scroll; */
 
 }
 
 form {
     margin : 0 auto;
-    width: 90%;
+    width: 90%; 
     position: absolute;
     top: 90%;
 }
-form .textbox {
+form #textbox {
     width: 50%;
     margin-left: 5%;
+    font-size: 1em;
+    line-height: 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1.5px solid rgb(104, 104, 104);
+    height: 3em;
 }
 
 form .send {
-    width : 5%;
+    width : 10%;
+    height: 3em;
+    background: #415977;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 20px;
+    box-shadow: 1px;
+    position: relative;
+}
+form .send:active {
+    transition: top 2s -webkit-transform 2s; /* Safari */
+    top: 2px;
+}
+
+form .send:hover {
+    background: #5878a1;
+    transition: background 2s -webkit-transform 2s; /* Safari */
     
 }
 body {
-    background: rgb(255, 255, 255);
+    color: #ffffff;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#chat {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+}
+.chatblock {
+    width:100%;
+    height: auto;
+    overflow: hidden;
 }
 
 .user {
     max-width: 70%;
-    background: #adb4c7;
-    padding: .8em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background: rgb(131, 182, 199);
+    padding: 15px;
+    margin-top:.8em;
+    margin-bottom: .8em;
     margin-left: 5%;
+    float: left;
+    display: block;
+    border-radius: 20px;
 }
 
 .bot {
     max-width: 90%;
     width: auto;
     display: block;
-    background: #adb4c7;
+    background: rgb(219, 146, 134);
     margin-right: 5%;
     float: right;
     padding: .8em;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: right;
+    border-radius: 20px;
 }
