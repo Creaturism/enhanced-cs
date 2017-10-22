@@ -1,4 +1,6 @@
-<?php
+<!DOCTYPE HTML>
+<html>
+	<?php
 $servername = "enhanced-cs.c6i7wvyicmua.us-east-2.rds.amazonaws.com";
 $username = "cs_admin";
 $password = "1234Qwer??";
@@ -9,3 +11,4 @@ if($conn->connect_error)
 }
 echo "Connected successfully";
 ?>
+</html>
